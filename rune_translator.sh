@@ -1,5 +1,5 @@
 #!/bin/bash
-current_version="1.0.1" # Used for checking for updates
+current_version="1.0.2" # Used for checking for updates
 # Show zenity dialog to input text
 result=$(echo "Hello world..." | zenity --text-info --title="Enter text" --editable)
 # Check if "Cancel" is clicked
@@ -64,10 +64,10 @@ $replace_text" | zenity --text-info --text="${result}" --title="Translation" --e
             check_for_updates
             ;;
         "Option 3") # Replace with name of option
-            notify-send "You selected Option 2"
+            echo "You selected Option 2"
             ;;
         "Option 4") # Replace with name of option
-            notify-send "You selected Option 3"
+            echo "You selected Option 3"
             ;;
         *) # Default
             echo "No valid option selected."
