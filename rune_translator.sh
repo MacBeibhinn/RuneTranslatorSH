@@ -1,5 +1,5 @@
 #!/bin/bash
-current_version="1.0.0" # Used for checking for updates
+current_version="1.0.1" # Used for checking for updates
 # Show zenity dialog to input text
 result=$(echo "Hello world..." | zenity --text-info --title="Enter text" --editable)
 # Check if "Cancel" is clicked
